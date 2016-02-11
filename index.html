@@ -11,18 +11,28 @@
     <title>Nomachines</title>
     <style>
 
-    p {
-        -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    .outer {
+        -webkit-animation-name: onetozero; /* Chrome, Safari, Opera */
         -webkit-animation-duration: 30s; /* Chrome, Safari, Opera */
-        animation-name: example;
+        animation-name: onetozero;
+        animation-duration: 20s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-delay: 2s;
+    }
+
+    p {
+        -webkit-animation-name: onetozero; /* Chrome, Safari, Opera */
+        -webkit-animation-duration: 30s; /* Chrome, Safari, Opera */
+        animation-name: onetozero;
         animation-duration: 20s;
         animation-iteration-count: 2;
         animation-direction: alternate;
-        animation-delay: 20s;
+        animation-delay: 2s;
     }
 
     /* Chrome, Safari, Opera */
-    @-webkit-keyframes example {
+    @-webkit-keyframes onetozero {
         from {background-color: white;}
         to {background-color: black;}
         from {color: black;}
@@ -30,7 +40,7 @@
     }
 
     /* Standard syntax */
-    @keyframes example {
+    @keyframes onetozero {
         from {background-color: white;}
         to {background-color: black;}
         from {color: black;}
@@ -89,7 +99,8 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
+    <!-- <div id="footer_wrap" class="outer"> -->
+    <div id="footer_wrap">
       <footer class="inner">
       </footer>
     </div>
